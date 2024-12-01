@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NqsdDXFxndUJtSsE9n6ZdirdX/QXwJCszUOT4RXt0ThGisVfq8VdtwbV0V/6T/h7rrQtJLtIrR18wB/YoKHAQQ==",
+  "dgSpecHash": "OXyMWH1qnyWbsWKHyusF0I+kUO8eDRlJJbNUPQfN9nhBVH9eK9pItJhCMydZlYwpJF0kcbYl5y4CgKg5jrpNIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\Game\\Game\\Game.csproj",
+  "projectFilePath": "C:\\Users\\PH\\Desktop\\GitHub\\Filmy_EF\\GameMVC\\Game\\Game.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PH\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\PH\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
