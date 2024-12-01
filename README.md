@@ -18,7 +18,7 @@
                                 MultipleActiveResultSets=true;TrustServerCertificate=True"
       },
            - Wykonaj migrację za pomocą konsoli menadżera pakietów w ścieżce projektu:
-              ADD-MIGRATION "Initial"
+              ADD-MIGRATION "NewBase"
               UPDATE-DATABASE
 
       Uruchom aplikację za pomocą Visual Studio
