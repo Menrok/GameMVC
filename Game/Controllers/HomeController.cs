@@ -52,6 +52,7 @@ namespace Game.Controllers
                     return View(model);
                 }
 
+                HttpContext.Session.SetInt32("UserId", user.Id);
                 HttpContext.Session.SetString("UserEmail", user.Email);
                 HttpContext.Session.SetString("UserRole", user.Role);
 
@@ -65,6 +66,7 @@ namespace Game.Controllers
 
             return View(model);
         }
+
 
         [HttpGet]
         public IActionResult Register()

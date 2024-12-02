@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Game.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241201093855_initial2")]
-    partial class initial2
+    [Migration("20241202181550_Forum")]
+    partial class Forum
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,35 @@ namespace Game.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Game.Models.ForumThread", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ForumThreads");
+                });
 
             modelBuilder.Entity("Game.Models.Hero", b =>
                 {
@@ -181,6 +210,36 @@ namespace Game.Migrations
                     b.ToTable("Quests");
                 });
 
+            modelBuilder.Entity("Game.Models.Reply", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ThreadId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ThreadId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Replies");
+                });
+
             modelBuilder.Entity("Game.Models.Transaction", b =>
                 {
                     b.Property<int>("Id")
@@ -253,6 +312,17 @@ namespace Game.Migrations
                     b.ToTable("HeroItem");
                 });
 
+            modelBuilder.Entity("Game.Models.ForumThread", b =>
+                {
+                    b.HasOne("Game.Models.User", "User")
+                        .WithMany("ForumThreads")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Game.Models.Hero", b =>
                 {
                     b.HasOne("Game.Models.User", "User")
@@ -281,6 +351,25 @@ namespace Game.Migrations
                     b.Navigation("Hero");
 
                     b.Navigation("Quest");
+                });
+
+            modelBuilder.Entity("Game.Models.Reply", b =>
+                {
+                    b.HasOne("Game.Models.ForumThread", "Thread")
+                        .WithMany("Replies")
+                        .HasForeignKey("ThreadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Game.Models.User", "User")
+                        .WithMany("Replies")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Thread");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Game.Models.Transaction", b =>
@@ -316,6 +405,11 @@ namespace Game.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Game.Models.ForumThread", b =>
+                {
+                    b.Navigation("Replies");
+                });
+
             modelBuilder.Entity("Game.Models.Hero", b =>
                 {
                     b.Navigation("HeroQuests");
@@ -335,7 +429,11 @@ namespace Game.Migrations
 
             modelBuilder.Entity("Game.Models.User", b =>
                 {
+                    b.Navigation("ForumThreads");
+
                     b.Navigation("Heroes");
+
+                    b.Navigation("Replies");
                 });
 #pragma warning restore 612, 618
         }

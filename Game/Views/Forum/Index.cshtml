@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Game.Models.ForumThread>
+
+@{
+    ViewData["Title"] = "Forum Threads";
+}
+
+<h1>Forum Threads</h1>
+
+<p>
+    <a href="@Url.Action("CreateThread", "Forum")">Create a new thread</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Created At</th>
+            <th>Replies</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var thread in Model)
+        {
+            <tr>
+                <td>
+                    <a href="@Url.Action("Show", "Forum", new { id = thread.Id })">@thread.Title</a>
+                </td>
+                <td>@thread.User.Email</td>
+                <td>@thread.CreatedAt</td>
+                <td>@thread.Replies.Count()</td>
+            </tr>
+        }
+    </tbody>
+</table>

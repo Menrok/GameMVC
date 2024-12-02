@@ -14,6 +14,8 @@ namespace Game.Data
         public DbSet<Item> Items { get; set; }
         public DbSet<HeroQuest> HeroQuests { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<ForumThread> ForumThreads { get; set; }
+        public DbSet<Reply> Replies { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -50,8 +52,25 @@ namespace Game.Data
                 .HasOne(t => t.Hero)
                 .WithMany(h => h.Transactions)
                 .HasForeignKey(t => t.HeroId)
-                .OnDelete(DeleteBehavior.Cascade); 
-        }
+                .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<ForumThread>()
+                .HasOne(ft => ft.User)
+                .WithMany(u => u.ForumThreads)
+                .HasForeignKey(ft => ft.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Reply>()
+                .HasOne(r => r.Thread)
+                .WithMany(t => t.Replies)
+                .HasForeignKey(r => r.ThreadId)
+                .OnDelete(DeleteBehavior.Cascade);
+    
+            modelBuilder.Entity<Reply>()
+                .HasOne(r => r.User)
+                .WithMany(u => u.Replies)
+                .HasForeignKey(r => r.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+        }
     }
 }

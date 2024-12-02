@@ -22,6 +22,35 @@ namespace Game.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Game.Models.ForumThread", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ForumThreads");
+                });
+
             modelBuilder.Entity("Game.Models.Hero", b =>
                 {
                     b.Property<int>("Id")
@@ -178,6 +207,36 @@ namespace Game.Migrations
                     b.ToTable("Quests");
                 });
 
+            modelBuilder.Entity("Game.Models.Reply", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ThreadId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ThreadId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Replies");
+                });
+
             modelBuilder.Entity("Game.Models.Transaction", b =>
                 {
                     b.Property<int>("Id")
@@ -218,16 +277,55 @@ namespace Game.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
 
                     b.Property<string>("HashedPassword")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Role")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -248,6 +346,17 @@ namespace Game.Migrations
                     b.HasIndex("ItemsId");
 
                     b.ToTable("HeroItem");
+                });
+
+            modelBuilder.Entity("Game.Models.ForumThread", b =>
+                {
+                    b.HasOne("Game.Models.User", "User")
+                        .WithMany("ForumThreads")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Game.Models.Hero", b =>
@@ -278,6 +387,25 @@ namespace Game.Migrations
                     b.Navigation("Hero");
 
                     b.Navigation("Quest");
+                });
+
+            modelBuilder.Entity("Game.Models.Reply", b =>
+                {
+                    b.HasOne("Game.Models.ForumThread", "Thread")
+                        .WithMany("Replies")
+                        .HasForeignKey("ThreadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Game.Models.User", "User")
+                        .WithMany("Replies")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Thread");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Game.Models.Transaction", b =>
@@ -313,6 +441,11 @@ namespace Game.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Game.Models.ForumThread", b =>
+                {
+                    b.Navigation("Replies");
+                });
+
             modelBuilder.Entity("Game.Models.Hero", b =>
                 {
                     b.Navigation("HeroQuests");
@@ -332,7 +465,11 @@ namespace Game.Migrations
 
             modelBuilder.Entity("Game.Models.User", b =>
                 {
+                    b.Navigation("ForumThreads");
+
                     b.Navigation("Heroes");
+
+                    b.Navigation("Replies");
                 });
 #pragma warning restore 612, 618
         }

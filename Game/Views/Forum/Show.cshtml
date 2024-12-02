@@ -1,0 +1,33 @@
+﻿@model Game.Models.ThreadRepliesViewModel
+
+@{
+    ViewData["Title"] = "Thread - " + Model.Thread.Title;
+}
+
+<h1>@Model.Thread.Title</h1>
+<p>By @Model.Thread.User.Email on @Model.Thread.CreatedAt</p>
+
+<div>
+    <p>@Model.Thread.Content</p>
+</div>
+
+<h3>Replies</h3>
+
+<div>
+    @foreach (var reply in Model.Replies)
+    {
+        <div>
+            <p><strong>@reply.User.Email</strong> on @reply.CreatedAt</p>
+            <p>@reply.Content</p>
+        </div>
+    }
+</div>
+
+<h3>Add a Reply</h3>
+
+<form method="post" asp-action="AddReply" asp-route-threadId="@Model.Thread.Id">
+    <div class="form-group">
+        <textarea class="form-control" name="content" placeholder="Your reply"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Post Reply</button>
+</form>

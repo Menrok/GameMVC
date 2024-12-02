@@ -1,0 +1,19 @@
+﻿@model Game.Models.ForumThread
+
+@{
+    ViewData["Title"] = "Create New Thread";
+}
+
+<h1>Create New Thread</h1>
+
+<form method="post" asp-action="CreateThread">
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <input type="text" class="form-control" id="Title" name="Title" value="@Model.Title" required />
+    </div>
+    <div class="form-group">
+        <label for="Content">Content</label>
+        <textarea class="form-control" id="Content" name="Content" required>@Model.Content</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Thread</button>
+</form>
