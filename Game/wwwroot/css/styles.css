@@ -233,3 +233,8 @@ table td form {
 .nav-item:not(:last-child) {
     margin-right: 10px;
 }
+
+.thread-container {
+    height: 500px;
+    overflow-y: auto; 
+}

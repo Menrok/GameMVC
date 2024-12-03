@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\ph\\desktop\\github\\gamemvc\\game\\views\\forum\\createthread.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\views\\forum\\createthread.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\ph\\desktop\\github\\gamemvc\\game\\views\\forum\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\views\\forum\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\ph\\desktop\\github\\gamemvc\\game\\views\\forum\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\views\\forum\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\ph\\desktop\\github\\gamemvc\\game\\views\\forum\\addreply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\views\\forum\\addreply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\ph\\desktop\\github\\gamemvc\\game\\controllers\\forumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\game\\controllers\\forumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\controllers\\forumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\ph\\desktop\\github\\gamemvc\\game\\game.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\game.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\ph\\desktop\\github\\gamemvc\\game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\ph\\desktop\\github\\gamemvc\\game\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,104 +26,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Show.cshtml",
-              "DocumentMoniker": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Views\\Forum\\Show.cshtml",
-              "RelativeDocumentMoniker": "Game\\Views\\Forum\\Show.cshtml",
-              "ToolTip": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Views\\Forum\\Show.cshtml",
-              "RelativeToolTip": "Game\\Views\\Forum\\Show.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T19:36:51.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Game\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Models\\User.cs",
-              "RelativeToolTip": "Game\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T19:26:04.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Program.cs",
-              "RelativeDocumentMoniker": "Game\\Program.cs",
-              "ToolTip": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Program.cs",
-              "RelativeToolTip": "Game\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T19:24:46.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddReply.cshtml",
-              "DocumentMoniker": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Views\\Forum\\AddReply.cshtml",
-              "RelativeDocumentMoniker": "Game\\Views\\Forum\\AddReply.cshtml",
-              "ToolTip": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Views\\Forum\\AddReply.cshtml",
-              "RelativeToolTip": "Game\\Views\\Forum\\AddReply.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T19:23:35.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Game",
-              "DocumentMoniker": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Game.csproj",
-              "RelativeDocumentMoniker": "Game\\Game.csproj",
-              "ToolTip": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Game.csproj",
-              "RelativeToolTip": "Game\\Game.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-02T19:19:39.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CreateThread.cshtml",
-              "DocumentMoniker": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Views\\Forum\\CreateThread.cshtml",
-              "RelativeDocumentMoniker": "Game\\Views\\Forum\\CreateThread.cshtml",
-              "ToolTip": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Views\\Forum\\CreateThread.cshtml",
-              "RelativeToolTip": "Game\\Views\\Forum\\CreateThread.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T18:36:25.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Views\\Forum\\Index.cshtml",
-              "RelativeDocumentMoniker": "Game\\Views\\Forum\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Views\\Forum\\Index.cshtml",
-              "RelativeToolTip": "Game\\Views\\Forum\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAwwCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T18:34:07.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "ForumController.cs",
               "DocumentMoniker": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Controllers\\ForumController.cs",
               "RelativeDocumentMoniker": "Game\\Controllers\\ForumController.cs",
               "ToolTip": "C:\\Users\\PH\\Desktop\\GitHub\\GameMVC\\Game\\Controllers\\ForumController.cs",
               "RelativeToolTip": "Game\\Controllers\\ForumController.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAmwGYAAAAuAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAALMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T17:29:00.736Z",
               "EditorCaption": ""

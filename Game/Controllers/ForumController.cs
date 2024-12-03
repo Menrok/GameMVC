@@ -20,6 +20,7 @@ namespace Game.Controllers
         {
             var threads = _context.ForumThreads
                 .Include(t => t.User)
+                .Include(t => t.Replies)
                 .ToList();
             return View(threads);
         }
@@ -55,39 +56,39 @@ namespace Game.Controllers
             var email = HttpContext.Session.GetString("UserEmail");
             if (string.IsNullOrEmpty(email))
             {
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login", "Home");
             }
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult CreateThread(ForumThread thread)
+        public IActionResult CreateThread(ForumThread forumThread)
         {
             var email = HttpContext.Session.GetString("UserEmail");
             if (string.IsNullOrEmpty(email))
             {
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login", "Home");
             }
 
             if (ModelState.IsValid)
             {
-                var userId = _context.Users.FirstOrDefault(u => u.Email == email)?.Id;
-
-                if (userId != null)
+                var user = _context.Users.FirstOrDefault(u => u.Email == email);
+                if (user != null)
                 {
-                    thread.UserId = userId.Value;
-                    thread.CreatedAt = DateTime.Now;
+                    forumThread.UserId = user.Id;
+                    forumThread.User = user;
+                    forumThread.CreatedAt = DateTime.Now;
 
-                    _context.ForumThreads.Add(thread);
+                    _context.ForumThreads.Add(forumThread);
                     _context.SaveChanges();
+
                     return RedirectToAction(nameof(Index));
                 }
 
                 ModelState.AddModelError("", "Nie udało się znaleźć użytkownika.");
             }
-
-            return View(thread);
+            return View(forumThread);
         }
 
         [HttpPost]
@@ -97,7 +98,7 @@ namespace Game.Controllers
             var email = HttpContext.Session.GetString("UserEmail");
             if (string.IsNullOrEmpty(email))
             {
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login", "Home");
             }
 
             if (string.IsNullOrEmpty(content))
@@ -126,6 +127,77 @@ namespace Game.Controllers
 
             ModelState.AddModelError("", "Nie udało się pobrać identyfikatora użytkownika.");
             return RedirectToAction("Show", new { id = threadId });
+        }
+
+        [HttpGet]
+        public IActionResult EditThread(int id)
+        {
+            var thread = _context.ForumThreads.Include(t => t.User).FirstOrDefault(t => t.Id == id);
+
+            if (thread == null)
+            {
+                return NotFound();
+            }
+
+            var userId = HttpContext.Session.GetInt32("UserId");
+
+            if (thread.UserId != userId)
+            {
+                return Unauthorized();
+            }
+
+            return View(thread);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult EditThread(int id, ForumThread forumThread)
+        {
+            if (ModelState.IsValid)
+            {
+                var thread = _context.ForumThreads.FirstOrDefault(t => t.Id == id);
+                if (thread == null)
+                {
+                    return NotFound();
+                }
+
+                var userId = HttpContext.Session.GetInt32("UserId");
+
+                if (thread.UserId != userId)
+                {
+                    return Unauthorized();
+                }
+
+                thread.Title = forumThread.Title;
+                thread.Content = forumThread.Content;
+                _context.SaveChanges();
+
+                return RedirectToAction("Index", "Forum");
+            }
+
+            return View(forumThread);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteThread(int id)
+        {
+            var thread = _context.ForumThreads.FirstOrDefault(t => t.Id == id);
+            if (thread == null)
+            {
+                return NotFound();
+            }
+
+            var email = HttpContext.Session.GetString("UserEmail");
+            if (HttpContext.Session.GetString("UserRole") != "Admin") 
+            {
+                return Unauthorized(); 
+            }
+
+            _context.ForumThreads.Remove(thread);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
         }
     }
 }

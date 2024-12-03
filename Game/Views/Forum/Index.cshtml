@@ -1,22 +1,20 @@
 ﻿@model IEnumerable<Game.Models.ForumThread>
 
 @{
-    ViewData["Title"] = "Forum Threads";
+    ViewData["Title"] = "Forum";
 }
-
-<h1>Forum Threads</h1>
-
 <p>
-    <a href="@Url.Action("CreateThread", "Forum")">Create a new thread</a>
+    <a href="@Url.Action("CreateThread", "Forum")" class="btn btn-primary btn-smaller">Dodaj nowy wątek</a>
 </p>
 
 <table class="table">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Created At</th>
-            <th>Replies</th>
+            <th>Tytuł</th>
+            <th>Autor</th>
+            <th>Data</th>
+            <th>Odpowiedzi</th>
+            <th>Akcje</th>
         </tr>
     </thead>
     <tbody>
@@ -29,6 +27,20 @@
                 <td>@thread.User.Email</td>
                 <td>@thread.CreatedAt</td>
                 <td>@thread.Replies.Count()</td>
+                <td>
+                    @if (ViewContext.HttpContext.Session.GetString("UserEmail") == thread.User.Email)
+                    {
+                        <a href="@Url.Action("EditThread", "Forum", new { id = thread.Id })" class="btn btn-primary btn-smaller">Edytuj</a>
+                    }
+
+                    @if (ViewContext.HttpContext.Session.GetString("UserRole") == "Admin")
+                    {
+                        <form method="post" asp-action="DeleteThread" asp-route-id="@thread.Id" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-primary btn-smaller">Usuń</button>
+                        </form>
+                    }
+                </td>
             </tr>
         }
     </tbody>

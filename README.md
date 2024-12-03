@@ -41,6 +41,13 @@
 
       Administrator: dodawanie, edytowanie oraz usuwanie misji i przedmiotów.
 
+      Forum
+      Niezalogowany użytkownik może przeglądać forum.
+      Zalogowany użytkownik może towrzyć nowe wątki, edytować swoje wątki oraz odpowiadać na wszystkie wątki.
+      
+      Forum Administrator
+      Administrator może robić to samo co zalogowany użytkownik oraz dodatkowo usuwać wątki.
+
 
 # Autorzy:
     Michał Handzel
