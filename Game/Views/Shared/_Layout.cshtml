@@ -26,8 +26,11 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Forum" asp-action="Index">Forum</a>
                         </li>
+
                         @if (ViewContext.HttpContext.Session.GetString("UserRole") == "Admin")
                         {
+                            <span class="nav-item border-left"></span>
+
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="AdminDashboard">Panel Administratora</a>
                             </li>
@@ -68,6 +71,21 @@
                             }
                         }
                     </ul>
+                    <div class="d-flex">
+                        @if (ViewContext.HttpContext.Session.GetString("UserRole") != null)
+                        {
+                            <span class="nav-link text-dark">@ViewContext.HttpContext.Session.GetString("UserEmail")</span>
+
+                            <span class="nav-item border-left"></span>
+
+                            <a href="javascript:void(0);" class="nav-link text-dark" onclick="document.getElementById('logoutForm').submit();">Wyloguj</a>
+                            <form id="logoutForm" asp-area="" asp-controller="Home" asp-action="Logout" method="post" style="display:none;"></form>
+                        }
+                        else
+                        {
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Zaloguj się</a>
+                        }
+                    </div>
                 </div>
             </div>
         </nav>

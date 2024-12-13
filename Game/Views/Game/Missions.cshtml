@@ -22,6 +22,28 @@
                             <form asp-action="QuestProgress" method="get">
                                 <input type="hidden" name="heroId" value="@Model.Id" />
                                 <input type="hidden" name="questId" value="@quest.Id" />
+                                <button type="submit" class="btn btn-primary btn-smaller">Rozpocznij</button>
+                                <a asp-action="Start" asp-route-id="@quest.Id" class="btn btn-primary">Rozpocznij</a>
+                                @foreach (var quest in Model)
+                                {
+                        <tr>
+                            <td>@quest.Name</td>
+                            <td>@quest.Description</td>
+                            <td>@quest.Difficulty</td>
+                            <td>
+                                            @if (!quest.IsCompleted)
+                                            {
+                                    <a asp-action="Start" asp-route-id="@quest.Id" class="btn btn-primary">Rozpocznij</a>
+                                            }
+                                            else
+                                            {
+                                    <span class="text-success">Zakończono</span>
+                                            }
+                            </td>
+                        </tr>
+                                }
+
+
                             </form>
                         </td>
                     </tr>

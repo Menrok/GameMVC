@@ -13,3 +13,4 @@
         public ICollection<HeroQuest> HeroQuests { get; set; } = new List<HeroQuest>();
     }
 }
+

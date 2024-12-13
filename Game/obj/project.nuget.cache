@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eoj7w7ma8Tc=",
+  "dgSpecHash": "iNF+4D510GU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Game.csproj",
+  "projectFilePath": "C:\\Users\\dawid\\Source\\Repos\\GameMVC\\Game\\Game.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dawid\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dawid\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
