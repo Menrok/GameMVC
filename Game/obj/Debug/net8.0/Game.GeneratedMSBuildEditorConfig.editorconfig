@@ -17,119 +17,119 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Game
 build_property.RootNamespace = Game
-build_property.ProjectDir = C:\Users\PH\Desktop\GitHub\GameMVC\Game\
+build_property.ProjectDir = C:\Users\dawid\Desktop\GameMVC\Game\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\PH\Desktop\GitHub\GameMVC\Game
+build_property.MSBuildProjectDirectory = C:\Users\dawid\Desktop\GameMVC\Game
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Admin/AddItem.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Admin/AddItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkSXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Admin/AddQuest.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Admin/AddQuest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUXVlc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Admin/AdminDashboard.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Admin/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Admin/EditItem.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Admin/EditItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEl0ZW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Admin/EditQuest.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Admin/EditQuest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFF1ZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Admin/ItemList.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Admin/ItemList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSXRlbUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Admin/QuestList.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Admin/QuestList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUXVlc3RMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Character/CharacterSelection.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Character/CharacterSelection.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcmFjdGVyXENoYXJhY3RlclNlbGVjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Character/CreateHero.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Character/CreateHero.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcmFjdGVyXENyZWF0ZUhlcm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Character/EditHero.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Character/EditHero.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcmFjdGVyXEVkaXRIZXJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Forum/CreateThread.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Forum/CreateThread.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1cQ3JlYXRlVGhyZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Forum/EditThread.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Forum/EditThread.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1cRWRpdFRocmVhZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Forum/Index.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Forum/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Forum/Show.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Forum/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1cU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Game/GameDashboard.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Game/GameDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxHYW1lRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Game/Hero.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Game/Hero.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxIZXJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Game/Missions.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Game/Missions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxNaXNzaW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Game/QuestProgress.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Game/QuestProgress.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxRdWVzdFByb2dyZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Game/Shop.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Game/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxTaG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Home/Index.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Home/Login.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Home/Register.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Shared/Error.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/_ViewImports.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/_ViewStart.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PH/Desktop/GitHub/GameMVC/Game/Views/Shared/_Layout.cshtml]
+[C:/Users/dawid/Desktop/GameMVC/Game/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3kao5a940b
