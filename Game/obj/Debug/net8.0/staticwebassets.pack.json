@@ -17,8 +17,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\GameMVC\\Game\\wwwroot\\images\\Mag.jpg",
+      "PackagePath": "staticwebassets\\images\\Mag.jpg"
+    },
+    {
       "Id": "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\GameMVC\\Game\\wwwroot\\images\\Tlo.jpg",
       "PackagePath": "staticwebassets\\images\\Tlo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\GameMVC\\Game\\wwwroot\\images\\Wojownik.jpg",
+      "PackagePath": "staticwebassets\\images\\Wojownik.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\GameMVC\\Game\\wwwroot\\images\\Łucznik.jpg",
+      "PackagePath": "staticwebassets\\images\\Łucznik.jpg"
     },
     {
       "Id": "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\GameMVC\\Game\\wwwroot\\js\\site.js",

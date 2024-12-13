@@ -53,95 +53,6 @@ namespace Game.Controllers
             return View(hero);
         }
 
-        public async Task<IActionResult> AssignQuest(int heroId, int questId)
-        {
-            var hero = await _context.Heroes
-                .FirstOrDefaultAsync(h => h.Id == heroId);
-
-            var quest = await _context.Quests
-                .FirstOrDefaultAsync(q => q.Id == questId);
-
-            if (hero == null || quest == null)
-            {
-                return NotFound();
-            }
-
-            var heroQuest = new HeroQuest
-            {
-                HeroId = heroId,
-                QuestId = questId,
-                IsCompleted = false,
-                StartTime = DateTime.Now
-            };
-
-            _context.HeroQuests.Add(heroQuest);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction("QuestProgress", new { heroId, questId });
-        }
-        
-        [HttpGet]
-        public async Task<IActionResult> QuestProgress(int heroId, int questId)
-        {
-            var heroQuest = await _context.HeroQuests
-                .Include(hq => hq.Hero)
-                .Include(hq => hq.Quest)
-                .FirstOrDefaultAsync(hq => hq.HeroId == heroId && hq.QuestId == questId);
-
-            if (heroQuest == null)
-            {
-                return NotFound();
-            }
-
-            var missionEndTime = heroQuest.StartTime.AddMinutes(10);
-            var timeRemaining = missionEndTime - DateTime.Now;
-
-            if (timeRemaining.TotalSeconds <= 0)
-            {
-                heroQuest.IsCompleted = true;
-                await _context.SaveChangesAsync();
-            }
-
-            ViewBag.TimeRemaining = timeRemaining;
-            return View(heroQuest);
-        }
-
-
-        [HttpPost]
-        public async Task<IActionResult> CompleteQuest(int heroId, int questId)
-        {
-            var hero = await _context.Heroes
-                .FirstOrDefaultAsync(h => h.Id == heroId);
-
-            var heroQuest = await _context.HeroQuests
-                .FirstOrDefaultAsync(hq => hq.HeroId == heroId && hq.QuestId == questId);
-
-            var quest = await _context.Quests
-                .FirstOrDefaultAsync(q => q.Id == questId);
-
-            if (hero == null || heroQuest == null || quest == null)
-            {
-                return NotFound();
-            }
-
-            if (heroQuest.IsCompleted)
-            {
-                TempData["ErrorMessage"] = "Ta misja już została ukończona.";
-                return RedirectToAction("Missions", new { heroId });
-            }
-
-            heroQuest.IsCompleted = true;
-            heroQuest.EndTime = DateTime.Now; 
-
-            hero.Experience += quest.RewardExperience;
-
-
-            await _context.SaveChangesAsync();
-
-            TempData["SuccessMessage"] = "Misja ukończona! Zdobyłeś " + quest.RewardExperience + " doświadczenia.";
-            return RedirectToAction("Missions", new { heroId });
-        }
-
         [HttpGet]
         public async Task<IActionResult> Hero(int heroId)
         {
@@ -313,6 +224,113 @@ namespace Game.Controllers
             }
 
             return RedirectToAction("Hero", new { heroId });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Fight(int heroId)
+        {
+            if (heroId == 0)
+            {
+                return NotFound("Bohater nie został znaleziony.");
+            }
+
+            var hero = await _context.Heroes
+                .Include(h => h.Items)
+                .FirstOrDefaultAsync(h => h.Id == heroId);
+
+            if (hero == null)
+            {
+                return NotFound("Bohater nie został znaleziony.");
+            }
+
+            var enemies = await _context.Enemies.ToListAsync();
+
+            if (enemies == null || !enemies.Any())
+            {
+                return NotFound("Brak przeciwników w bazie danych.");
+            }
+
+            var random = new Random();
+            var enemy = enemies[random.Next(enemies.Count)];
+
+            if (enemy == null)
+            {
+                return NotFound("Przeciwnik nie został znaleziony.");
+            }
+
+            ViewData["HeroId"] = hero.Id;
+            ViewData["EnemyId"] = enemy.Id;
+
+            return View(new FightViewModel
+            {
+                Hero = hero,
+                Enemy = enemy
+            });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Fight(FightViewModel model)
+        {
+            var hero = await _context.Heroes
+                .FirstOrDefaultAsync(h => h.Id == model.HeroId);
+
+            var enemy = await _context.Enemies
+                .FirstOrDefaultAsync(e => e.Id == model.EnemyId);
+
+            if (hero == null || enemy == null)
+            {
+                return NotFound();
+            }
+
+            var heroPower = hero.Strength + hero.Dexterity + hero.Intelligence;
+            var enemyPower = enemy.Strength + enemy.Dexterity + enemy.Intelligence;
+
+            var heroWins = heroPower > enemyPower;
+
+            if (heroWins)
+            {
+                hero.Money += 50;
+                hero.Experience += 100;
+
+                TempData["FightResult"] = "Wygrałeś walkę!";
+                TempData["GoldReward"] = 50;
+                TempData["ExperienceReward"] = 100;
+            }
+            else
+            {
+                TempData["FightResult"] = "Przegrałeś walkę. Spróbuj ponownie!";
+            }
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("FightResult", new { heroId = hero.Id });
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> FightResult(int heroId)
+        {
+            var hero = await _context.Heroes
+                .FirstOrDefaultAsync(h => h.Id == heroId);
+
+            if (hero == null)
+            {
+                return NotFound("Bohater nie został znaleziony.");
+            }
+
+            var enemy = await _context.Enemies
+                .FirstOrDefaultAsync(e => e.Id == hero.Id); 
+
+            if (enemy == null)
+            {
+                return NotFound("Przeciwnik nie został znaleziony.");
+            }
+
+            return View(new FightViewModel
+            {
+                Hero = hero,
+                Enemy = enemy
+            });
         }
     }
 }

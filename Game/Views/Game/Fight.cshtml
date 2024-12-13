@@ -1,0 +1,15 @@
+﻿@model Game.Models.FightViewModel
+
+<div class="d-flex flex-column  align-items-center">
+    <h2>Wyprawa</h2>
+
+    <p>Przeciwnik: @Model.Enemy.Name</p>
+    <p>Siła: @Model.Enemy.Strength, Zręczność: @Model.Enemy.Dexterity, Inteligencja: @Model.Enemy.Intelligence</p>
+
+    <p>Twoje atrybuty:</p>
+    <p>Siła: @Model.Hero.Strength, Zręczność: @Model.Hero.Dexterity, Inteligencja: @Model.Hero.Intelligence</p>
+
+    <form method="post" action="@Url.Action("Fight", new { heroId = Model.Hero.Id, enemyId = Model.Enemy.Id })" class="mb-2">
+        <button type="submit" class="btn btn-primary">Rozpocznij walkę</button>
+    </form>
+</div>

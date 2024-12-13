@@ -20,7 +20,7 @@ namespace Game.Models
         public int PointsToSpend { get; set; } = 0;
         public int Defense { get; set; } = 0;
         public int Health { get; set; } = 100;
-        public int Money { get; set; } = 10;
+        public int Money { get; set; } = 1000;
 
         public int UserId { get; set; }
         public User User { get; set; }

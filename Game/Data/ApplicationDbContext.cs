@@ -16,6 +16,8 @@ namespace Game.Data
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<ForumThread> ForumThreads { get; set; }
         public DbSet<Reply> Replies { get; set; }
+        public DbSet<Enemy> Enemies { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -70,6 +72,12 @@ namespace Game.Data
                 .HasOne(r => r.User)
                 .WithMany(u => u.Replies)
                 .HasForeignKey(r => r.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Hero>()
+                .HasOne(h => h.User)
+                .WithMany(u => u.Heroes)
+                .HasForeignKey(h => h.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\GameMVC\\Game\\Game.csproj": {}
+    "C:\\Users\\dawid\\Desktop\\1\\Game\\Game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\GameMVC\\Game\\Game.csproj": {
+    "C:\\Users\\dawid\\Desktop\\1\\Game\\Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\GameMVC\\Game\\Game.csproj",
+        "projectUniqueName": "C:\\Users\\dawid\\Desktop\\1\\Game\\Game.csproj",
         "projectName": "Game",
-        "projectPath": "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\GameMVC\\Game\\Game.csproj",
-        "packagesPath": "C:\\Users\\PH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PH\\Desktop\\Programowanie\\NET\\GameMVC\\Game\\obj\\",
+        "projectPath": "C:\\Users\\dawid\\Desktop\\1\\Game\\Game.csproj",
+        "packagesPath": "C:\\Users\\dawid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dawid\\Desktop\\1\\Game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dawid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -102,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

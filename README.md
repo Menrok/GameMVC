@@ -36,7 +36,7 @@
       Logowanie: Zalogowanie się do aplikacji za pomocą e-maila i hasła.
       Tworzenie nowego bohatera: tworzenie (Nazwa, wybór klasy), edytowanie (zmiana nazwy bohatera) i usuwanie.
       Interfejs użytkownika: Krótkie opisy wyglądu aplikacji i elementów, z którymi użytkownik będzie wchodził w interakcję.
-      Gra: Gracz może przeglądać misje, kupować i sprzedawać przedmioty w sklepie, przeglądać swoją postać,
+      Gra: Gracz może przeglądać misje, walczyć, kupować i sprzedawać przedmioty w sklepie, przeglądać swoją postać,
            zakładać/ściągać przedmioty które zwiększają statystyki. 
 
       Administrator: dodawanie, edytowanie oraz usuwanie misji i przedmiotów.
@@ -44,9 +44,7 @@
       Forum
       Niezalogowany użytkownik może przeglądać forum.
       Zalogowany użytkownik może towrzyć nowe wątki, edytować swoje wątki oraz odpowiadać na wszystkie wątki.
-      
-      Forum Administrator
-      Administrator może robić to samo co zalogowany użytkownik oraz dodatkowo usuwać wątki.
+      Administrator może usuwać wątki.
 
 
 # Autorzy:
