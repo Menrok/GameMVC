@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dawid\\Desktop\\GameMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\dawid\\desktop\\gamemvc\\game\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\dawid\\desktop\\gamemvc\\game\\views\\game\\missions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\views\\game\\missions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\dawid\\desktop\\gamemvc\\game\\controllers\\questscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\controllers\\questscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\dawid\\desktop\\gamemvc\\game\\models\\heroquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\models\\heroquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\dawid\\desktop\\gamemvc\\game\\models\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\models\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\dawid\\desktop\\gamemvc\\game\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|c:\\users\\dawid\\desktop\\gamemvc\\game\\views\\game\\questprogress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97166685-625B-47B1-AE93-A9B9600147BA}|Game\\Game.csproj|solutionrelative:game\\views\\game\\questprogress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Migrations\\20241213172445_GameDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Game\\Migrations\\20241213172445_GameDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Migrations\\20241213172339_GameDV.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Game\\Migrations\\20241213172339_GameDV.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Migrations\\20241213172310_UpdateQuests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Game\\Migrations\\20241213172310_UpdateQuests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HeroQuest.cs",
+              "DocumentMoniker": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Models\\HeroQuest.cs",
+              "RelativeDocumentMoniker": "Game\\Models\\HeroQuest.cs",
+              "ToolTip": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Models\\HeroQuest.cs",
+              "RelativeToolTip": "Game\\Models\\HeroQuest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T17:48:40.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Quest.cs",
+              "DocumentMoniker": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Models\\Quest.cs",
+              "RelativeDocumentMoniker": "Game\\Models\\Quest.cs",
+              "ToolTip": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Models\\Quest.cs",
+              "RelativeToolTip": "Game\\Models\\Quest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T17:41:06.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Game\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Game\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T17:33:19.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QuestProgress.cshtml",
+              "DocumentMoniker": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Views\\Game\\QuestProgress.cshtml",
+              "RelativeDocumentMoniker": "Game\\Views\\Game\\QuestProgress.cshtml",
+              "ToolTip": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Views\\Game\\QuestProgress.cshtml",
+              "RelativeToolTip": "Game\\Views\\Game\\QuestProgress.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T17:32:27.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20241213172445_GameDB.cs",
+              "DocumentMoniker": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Migrations\\20241213172445_GameDB.cs",
+              "RelativeDocumentMoniker": "Game\\Migrations\\20241213172445_GameDB.cs",
+              "ToolTip": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Migrations\\20241213172445_GameDB.cs",
+              "RelativeToolTip": "Game\\Migrations\\20241213172445_GameDB.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T17:24:45.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20241213172339_GameDV.cs",
+              "DocumentMoniker": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Migrations\\20241213172339_GameDV.cs",
+              "RelativeDocumentMoniker": "Game\\Migrations\\20241213172339_GameDV.cs",
+              "ToolTip": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Migrations\\20241213172339_GameDV.cs",
+              "RelativeToolTip": "Game\\Migrations\\20241213172339_GameDV.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T17:23:39.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Missions.cshtml",
+              "DocumentMoniker": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Views\\Game\\Missions.cshtml",
+              "RelativeDocumentMoniker": "Game\\Views\\Game\\Missions.cshtml",
+              "ToolTip": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Views\\Game\\Missions.cshtml*",
+              "RelativeToolTip": "Game\\Views\\Game\\Missions.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T16:41:45.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Data\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "Game\\Data\\DataSeeder.cs",
+              "ToolTip": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Data\\DataSeeder.cs",
+              "RelativeToolTip": "Game\\Data\\DataSeeder.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:40:22.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuestsController.cs",
+              "DocumentMoniker": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Controllers\\QuestsController.cs",
+              "RelativeDocumentMoniker": "Game\\Controllers\\QuestsController.cs",
+              "ToolTip": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Controllers\\QuestsController.cs",
+              "RelativeToolTip": "Game\\Controllers\\QuestsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:39:52.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20241213172310_UpdateQuests.cs",
+              "DocumentMoniker": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Migrations\\20241213172310_UpdateQuests.cs",
+              "RelativeDocumentMoniker": "Game\\Migrations\\20241213172310_UpdateQuests.cs",
+              "ToolTip": "C:\\Users\\dawid\\Desktop\\GameMVC\\Game\\Migrations\\20241213172310_UpdateQuests.cs",
+              "RelativeToolTip": "Game\\Migrations\\20241213172310_UpdateQuests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T17:23:10.475Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

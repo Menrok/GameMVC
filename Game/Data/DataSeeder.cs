@@ -93,6 +93,31 @@ namespace Game.Data
 
                 _context.SaveChanges();
             }
+
+            if (!_context.Enemies.Any())
+            {
+                _context.Enemies.AddRange(new List<Enemy>
+                {
+                    new Enemy { Name = "Wilk", Strength = 5, Dexterity = 3, Intelligence = 2, Health = 50, Level = 1, GoldReward = 10, ExperienceReward = 50 },
+                    new Enemy { Name = "Bandyta", Strength = 7, Dexterity = 5, Intelligence = 3, Health = 70, Level = 2, GoldReward = 15, ExperienceReward = 100 },
+                    new Enemy { Name = "Ork", Strength = 10, Dexterity = 6, Intelligence = 4, Health = 100, Level = 3, GoldReward = 30, ExperienceReward = 150 },
+                    new Enemy { Name = "Goblin", Strength = 4, Dexterity = 7, Intelligence = 3, Health = 40, Level = 1, GoldReward = 5, ExperienceReward = 25 },
+                    new Enemy { Name = "Troll", Strength = 12, Dexterity = 4, Intelligence = 2, Health = 120, Level = 4, GoldReward = 40, ExperienceReward = 200 },
+                    new Enemy { Name = "Szkielet", Strength = 6, Dexterity = 3, Intelligence = 2, Health = 60, Level = 2, GoldReward = 10, ExperienceReward = 75 },
+                    new Enemy { Name = "Zombii", Strength = 8, Dexterity = 2, Intelligence = 1, Health = 80, Level = 3, GoldReward = 20, ExperienceReward = 100 },
+                    new Enemy { Name = "Czarodziej", Strength = 4, Dexterity = 5, Intelligence = 9, Health = 40, Level = 3, GoldReward = 25, ExperienceReward = 150 },
+                    new Enemy { Name = "Centaur", Strength = 10, Dexterity = 7, Intelligence = 5, Health = 90, Level = 4, GoldReward = 35, ExperienceReward = 175 },
+                    new Enemy { Name = "Hydra", Strength = 15, Dexterity = 4, Intelligence = 5, Health = 150, Level = 5, GoldReward = 50, ExperienceReward = 250 },
+                    new Enemy { Name = "Smok", Strength = 20, Dexterity = 5, Intelligence = 6, Health = 200, Level = 6, GoldReward = 100, ExperienceReward = 300 },
+                    new Enemy { Name = "Wampir", Strength = 8, Dexterity = 6, Intelligence = 8, Health = 75, Level = 4, GoldReward = 30, ExperienceReward = 150 },
+                    new Enemy { Name = "Demon", Strength = 18, Dexterity = 6, Intelligence = 7, Health = 170, Level = 7, GoldReward = 75, ExperienceReward = 400 },
+                    new Enemy { Name = "Mumi", Strength = 7, Dexterity = 3, Intelligence = 4, Health = 65, Level = 2, GoldReward = 10, ExperienceReward = 60 },
+                    new Enemy { Name = "Minotaur", Strength = 14, Dexterity = 5, Intelligence = 3, Health = 130, Level = 5, GoldReward = 40, ExperienceReward = 225 },
+                    new Enemy { Name = "Wielki Pająk", Strength = 9, Dexterity = 8, Intelligence = 2, Health = 85, Level = 3, GoldReward = 20, ExperienceReward = 125 }
+                });
+
+                _context.SaveChanges();
+            }
         }
     }
 }

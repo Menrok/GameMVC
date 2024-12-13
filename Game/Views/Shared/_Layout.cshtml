@@ -49,6 +49,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Game" asp-action="Shop" asp-route-heroId="@ViewData["HeroId"]">Sklep</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Game" asp-action="Fight" asp-route-heroId="@ViewData["HeroId"]">Wyprawa</a>
+                                </li>
                             }
                         }
                         else if (ViewContext.HttpContext.Session.GetString("UserRole") == "User")
@@ -67,6 +70,9 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Game" asp-action="Shop" asp-route-heroId="@ViewData["HeroId"]">Sklep</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Game" asp-action="Fight" asp-route-heroId="@ViewData["HeroId"]">Wyprawa</a>
                                 </li>
                             }
                         }

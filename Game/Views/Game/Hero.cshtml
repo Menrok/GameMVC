@@ -3,16 +3,19 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <h2 class="text-center my-4">Statystyki</h2>
-            <p>Imię: @Model.Name</p>
-            <p>Klasa: @Model.Class</p>
+            <h2 class="text-center my-4">@Model.Name</h2>
+
+            <div class="text-center mb-4">
+                <img src="/images/@($"{Model.Class}.jpg")" alt="@Model.Class" class="img-fluid rounded" style="max-width: 150px;" />
+            </div>
+
             <p>Poziom: @Model.Level</p>
+            <p>Doświadczenie: @Model.Experience</p>
             <p>Zdrowie: @Model.Health</p>
             <p>Siła: @Model.Strength</p>
             <p>Zręczność: @Model.Dexterity</p>
             <p>Inteligencja: @Model.Intelligence</p>
             <p>Obrona: @Model.Defense</p>
-            <p>Doświadczenie: @Model.Experience</p>
             <p>Złoto: @Model.Money</p>
         </div>
 

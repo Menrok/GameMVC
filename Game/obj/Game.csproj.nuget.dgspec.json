@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dawid\\Source\\Repos\\GameMVC\\Game\\Game.csproj": {}
+    "C:\\Users\\dawid\\Desktop\\1\\Game\\Game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dawid\\Source\\Repos\\GameMVC\\Game\\Game.csproj": {
+    "C:\\Users\\dawid\\Desktop\\1\\Game\\Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dawid\\Source\\Repos\\GameMVC\\Game\\Game.csproj",
+        "projectUniqueName": "C:\\Users\\dawid\\Desktop\\1\\Game\\Game.csproj",
         "projectName": "Game",
-        "projectPath": "C:\\Users\\dawid\\Source\\Repos\\GameMVC\\Game\\Game.csproj",
+        "projectPath": "C:\\Users\\dawid\\Desktop\\1\\Game\\Game.csproj",
         "packagesPath": "C:\\Users\\dawid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dawid\\Source\\Repos\\GameMVC\\Game\\obj\\",
+        "outputPath": "C:\\Users\\dawid\\Desktop\\1\\Game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

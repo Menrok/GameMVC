@@ -22,25 +22,27 @@
         </div>
 
         <div class="form-group text-center">
-            <label for="Class" class="h5">Klasa postaci</label>
-            @Html.DropDownListFor(m => m.Class, classes, new { @class = "form-control w-50 mx-auto", id = "ClassSelect" })
-            @Html.ValidationMessageFor(m => m.Class, "", new { @class = "text-danger" })
-        </div>
+            <label class="h5">Wybierz klasę postaci</label>
+            <div class="d-flex justify-content-center mt-3">
+                <label class="class-option mx-2">
+                    <input type="radio" name="Class" value="Wojownik" class="d-none" />
+                    <img src="/images/Wojownik.jpg" alt="Wojownik" class="class-image" />
+                    <p class="mt-2">Wojownik</p>
+                </label>
 
+                <label class="class-option mx-2">
+                    <input type="radio" name="Class" value="Mag" class="d-none" />
+                    <img src="/images/Mag.jpg" alt="Mag" class="class-image" />
+                    <p class="mt-2">Mag</p>
+                </label>
 
-        <div class="form-group text-center">
-            <h4>Statystyki postaci</h4>
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <p><strong>Siła:</strong> <span id="StrengthValue">10</span> <span id="StrengthBonus" class="text-success"></span></p>
-                </div>
-                <div class="col-md-3">
-                    <p><strong>Zręczność:</strong> <span id="DexterityValue">10</span> <span id="DexterityBonus" class="text-success"></span></p>
-                </div>
-                <div class="col-md-3">
-                    <p><strong>Inteligencja:</strong> <span id="IntelligenceValue">10</span> <span id="IntelligenceBonus" class="text-success"></span></p>
-                </div>
+                <label class="class-option mx-2">
+                    <input type="radio" name="Class" value="Łucznik" class="d-none" />
+                    <img src="/images/Łucznik.jpg" alt="Łucznik" class="class-image" />
+                    <p class="mt-2">Łucznik</p>
+                </label>
             </div>
+            @Html.ValidationMessageFor(m => m.Class, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group text-center">
@@ -48,3 +50,15 @@
         </div>
     </form>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const options = document.querySelectorAll('.class-option');
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                options.forEach(o => o.querySelector('.class-image').classList.remove('selected'));
+                option.querySelector('.class-image').classList.add('selected');
+            });
+        });
+    });
+</script>

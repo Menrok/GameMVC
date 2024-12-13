@@ -1,0 +1,37 @@
+﻿@model Game.Models.FightViewModel
+
+<div class="container my-4">
+    <h2 class="text-center mb-4">Walka zakończona</h2>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <p><strong>Bohater:</strong> @Model.Hero.Name</p>
+            <p><strong>Przeciwnik:</strong> @Model.Enemy.Name</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            @if (TempData["FightResult"] != null)
+            {
+                <p><strong>Wynik walki:</strong> @TempData["FightResult"]</p>
+            }
+
+            @if (TempData["GoldReward"] != null)
+            {
+                <p><strong>Otrzymane złoto:</strong> @TempData["GoldReward"]</p>
+            }
+
+            @if (TempData["ExperienceReward"] != null)
+            {
+                <p><strong>Otrzymane doświadczenie:</strong> @TempData["ExperienceReward"]</p>
+            }
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12 text-center">
+            <a href="@Url.Action("GameDashboard", "Game", new { heroId = Model.Hero.Id })" class="btn btn-primary">Powrót</a>
+        </div>
+    </div>
+</div>
